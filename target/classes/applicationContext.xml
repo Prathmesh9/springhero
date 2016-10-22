@@ -25,11 +25,14 @@
 	<!-- Configure Postgres Connection -->
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName" value="org.postgresql.Driver" />
-		<!-- <property name="url" value="jdbc:postgresql:User" /> -->
+		<!-- <property name="driverClassName" value="org.postgresql.Driver" />
+		<property name="url" value="jdbc:postgresql:User" />
+		<property name="username" value="postgres" />
+		<property name="password" value="postgres" /> -->
 		<property name="url" value="jdbc:postgresql://ec2-54-75-230-128.eu-west-1.compute.amazonaws.com:5432/ddnbpnk338fctm?username=dhcndijioxcbdp&amp;password=JrOiIlr0Dz4mH7p9MEpQpcdAbs&amp;ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory" />
 		<property name="username" value="dhcndijioxcbdp" />
 		<property name="password" value="JrOiIlr0Dz4mH7p9MEpQpcdAbs" />
+		
 	</bean>
 	
 	<!-- Configure Hibernate 4 Session Facotry Mysql-->
